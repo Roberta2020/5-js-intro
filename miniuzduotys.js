@@ -28,8 +28,8 @@ const draugai = ["Laura", "Vilius", "Tomas", "Ugnė", "Paulius"];
 console.log(draugai);
 const gyvunai = ["Žirafa", "Liūtas", "Dramblys", "Zebras", "Begemotas"];
 console.log(gyvunai);
-const pirkiniuSarasas = ["Kiaušiniai", "Pienas", "Duona", "Sūris", "Miltai"];
-console.log(pirkiniuSarasas);
+const pirkiniai = ["Kiaušiniai", "Pienas", "Duona", "Sūris", "Miltai"];
+console.log(pirkiniai);
 
 /* Veiksmai su kintamaisiais 
 1. */
@@ -39,15 +39,20 @@ console.log(suma);
 const tekstas = metuLaikas + " " + filmas + " " + gele;
 console.log(tekstas);
 /* 3. */
-const reitingoSkaicius = 3 - 6 + 9 - 15 + 16;
+const reitingoSkaicius = reitingas[0] - reitingas[1] + reitingas[2] - reitingas[3] + reitingas[4];
 console.log(reitingoSkaicius); 
-const batuDydioSkaicius = 36 - 37 + 38 - 39 + 40;
+const batuDydioSkaicius = batuDydis[0] - batuDydis[1] + batuDydis[2] - batuDydis[3] + batuDydis[4];
 console.log(batuDydioSkaicius);
-const balsuSkaicius = 125 - 14 + 55 - 94 + 101;
+const balsuSkaicius = balsai[0] - balsai[1] + balsai[2] - balsai[3] + balsai[4];
 console.log(balsuSkaicius);
 /* 4. */
-const sarasai = pirkiniuSarasas + ", " + gyvunai + ", " + draugai;
-console.log(sarasai);
+const drauguSarasas = draugai[4] + ", " + draugai[3] + ", " + draugai[2] + ", " + draugai[1] + ", " + draugai[0];
+console.log(drauguSarasas);
+const gyvunuSarasas = gyvunai[4] + ", " + gyvunai[3] + ", " + gyvunai[2] + ", " + gyvunai[1] + ", " + gyvunai[0];
+console.log(gyvunuSarasas);
+const pirkiniuSarasas = pirkiniai[4] + ", " + pirkiniai[3] + ", " + pirkiniai[2] + ", " + pirkiniai[1] + ", " + pirkiniai[0];
+console.log(pirkiniuSarasas);
+
 
 
 

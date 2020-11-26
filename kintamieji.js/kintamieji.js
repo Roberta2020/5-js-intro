@@ -12,6 +12,10 @@
  -logine reiksme (boolean)
  -sarasas/masyvas (array)
 
+ kintamuju tipas atminties atzvilgiu (kaip dirba kintamuju atmintis):
+ -primityvi reiksme
+ -kompleksine reiksme
+
  */
 
  const vardas = "Vardenis";    
