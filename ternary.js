@@ -32,7 +32,7 @@
  if (sezonas === 'vasara') {
      if (temperatura > 10) {
          console.log('Maike');   
-} 
+     }
 } else {
 console.log('Golfas');
  } else {
@@ -43,7 +43,7 @@ console.log('Golfas');
     }
  }
 
- const kaVIlkis = sezonas === 'vasara' ? 
+ const kaVIlktis = sezonas === 'vasara' ? 
                     temperatura > 10 ? 
                     'Maike' : 
                     "Golfas"
@@ -51,4 +51,4 @@ console.log('Golfas');
                     'Megztinis' : 
                     'Striuke';
 
- console.log(kaVIlkis);
+ console.log(kaVIlktis);
