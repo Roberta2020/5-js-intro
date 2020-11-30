@@ -71,4 +71,11 @@ if (day === 'mon') {
 } else {
     console.log('Not a week day...');
 }
+
+console.clear();
  
+if (7 === 6) {
+    console.log('POzityvas');
+} else {
+    console.log('NEgatyvas');
+}
