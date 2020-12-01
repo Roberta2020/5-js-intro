@@ -56,3 +56,14 @@ console.log(`Pazymiu vidurkis yra ${average}.`);
 
 console.log('---------------------------------------');
 
+
+const txt = 'abcdef';
+const firstLetter = txt [0];
+
+console.log(firstLetter);
+console.log(txt[1]);
+console.log(txt[2]);
+console.log(txt[3]);
+console.log(txt[4]);
+
+
