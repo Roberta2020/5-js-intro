@@ -19,22 +19,22 @@
  console.log(`Jei tau ${amzius1} - ${verdiktas1}`);
  console.log(`Jei tau ${amzius2} - ${verdiktas2}`);
 
- const makeSense = true;
+ const makeSense = false;
  const ats = makeSense ? 'taip' : 'ne';
 
  console.log(ats);
 
  console.log('-------------------------------------');
 
- const sezonas = 'vasara';
- const temperatura = 10;
+ const sezonas = 'ruduo';
+ const temperatura = 15;
 
  if (sezonas === 'vasara') {
      if (temperatura > 10) {
          console.log('Maike');   
-     }
 } else {
-console.log('Golfas');
+        console.log('Golfas');
+}
  } else {
     if (temperatura > 10) {
         console.log('Megztinis');
