@@ -17,3 +17,13 @@ for (let i = text.length - 1; i >= 0; i--) {
 
 console.log(text, '<-->', backward);
 
+for (let i = 0; i < text.length; i++) {
+    const letter = text[i];
+    backward = letter + backward;
+}
+
+console.log(backward);
+
+
+
+
