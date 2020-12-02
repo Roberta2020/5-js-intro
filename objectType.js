@@ -65,3 +65,23 @@ console.log(zmogus.automobilis.marke);
 console.log(zmogus.tevai[0].vardas);
 console.log(zmogus.tevai[1].vardas);
 
+const butas = {
+
+    aukstas: 5,
+    kambariuSkaicius: 2,
+    kambariuDydziai: [
+        {
+            paskirtis: 'virtuve',
+            dydis: `8 m2` 
+        },
+        {
+            paskirtis: 'svetaine',
+            dydis: `10 m2`
+        },
+    ],
+
+}
+
+console.log(butas);
+console.log(butas.kambariuDydziai[0]);
+console.log(butas.kambariuDydziai[1]);
