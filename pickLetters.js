@@ -69,4 +69,13 @@ console.log( pickLetters('abc', 4 ));
 9 "j" 3
 10 "k" 3
 11 "l" 3  11
+
+
+KAIP ISRANKIOTI RAIDS IS KITO GALO
+raides imamos is kito teksto galo
+
+console.log( pickLetters('abcdefg', -2), '->', 'fdb');
+console.log( pickLetters('abcdefghijkl', -3 ), '->', 'jgda');
+
+
 */
