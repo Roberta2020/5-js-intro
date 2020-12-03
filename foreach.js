@@ -4,7 +4,7 @@ tai ne funkcija o metodas, jis prisideda prie objekto
 skiliaustuose aprasyti funkcija, ka daryti su kiekcienu skaiciu elementu
 1 pavyzdi foreachas naudojamas su funkcija
 2 pavyzdys rodo kad function naudojama foreacho viduje
-
+3 pavyzdys rodo kaip galima uzrasysti forEacha su arrow function
 */
 
 const skaiciai = [1, 2, 3, 4, 5, 6];
@@ -29,3 +29,5 @@ skaiciai.forEach(function(p) {
     console.log(kvd);
     return kvd;
 })
+
+skaiciai.forEach (p => console.log(p * p));
