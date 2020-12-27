@@ -255,3 +255,265 @@ if(filmasIlgis <= geleIlgis) {
 } else {
     console.log('Bandykite kitą kartą.');
 }
+/* 4. (isvesti saraso tipo kintamuju ilgius)*/ 
+let reitingoIlgis = reitingas.length;
+let batuDydzioIlgis = batuDydis.length;
+let balsuIlgis = balsai.length;
+console.log(reitingoIlgis);
+console.log(batuDydzioIlgis);
+console.log(balsuIlgis);
+
+let drauguIlgis = draugai.length;
+let gyvunuIlgis = gyvunai.length;
+let pirkiniuIlgis = pirkiniai.length;
+console.log(drauguIlgis);
+console.log(gyvunuIlgis);
+console.log(pirkiniuIlgis);
+/* 5.a. (tarpusavy palyginti saraso tipo kintamuju ilgius)(kuris didesnis) */
+if(reitingoIlgis > batuDydzioIlgis) {
+    console.log(`Didesnis reitingo sarasas.`);
+}else {
+    console.log(`Didesnis batu dydziu sarasas.`);
+} 
+if(batuDydzioIlgis > balsuIlgis) {
+    console.log(`Didesnis batu dydziu sarasas.`);
+}else {
+    console.log(`Didesnis balsu sarasas.`);
+}
+if(balsuIlgis > reitingoIlgis) {
+    console.log(`Didesnis balsu sarasas.`);
+}else {
+    console.log(`Didesnis reitingo sarasas.`);
+}
+/* 5.b. (kuris mazesnis) */
+if(reitingoIlgis < batuDydzioIlgis) {
+    console.log(`Mazesnis reitingo sarasas.`);
+}else {
+    console.log(`Mazesnis batu dydziu sarasas.`);
+} 
+if(batuDydzioIlgis < balsuIlgis) {
+    console.log(`Mazesnis batu dydziu sarasas.`);
+}else {
+    console.log(`Mazesnis balsu sarasas.`);
+}
+if(balsuIlgis < reitingoIlgis) {
+    console.log(`Mazesnis balsu sarasas.`);
+}else {
+    console.log(`Mazesnis reitingo sarasas.`);
+}
+/* 5.c. (ar jie lygus) */
+if(reitingoIlgis = batuDydzioIlgis) {
+    console.log(`Sarasai vienodo ilgio.`);
+}else {
+    console.log(`Sarasai nelygus.`);
+} 
+if(batuDydzioIlgis = balsuIlgis) {
+    console.log(`Sarasai vienodo ilgio.`);
+}else {
+    console.log(`Sarasai nelygus.`);
+} 
+if(balsuIlgis = reitingoIlgis) {
+    console.log(`Sarasai vienodo ilgio.`);
+}else {
+    console.log(`Sarasai nelygus.`);
+} 
+/* 5.d. (ar nelygus) */
+if(reitingoIlgis != batuDydzioIlgis) {
+    console.log(`Sarasai nelygus.`);
+}else {
+    console.log(`Sarasai vienodo ilgio.`);
+} 
+if(batuDydzioIlgis != balsuIlgis) {
+    console.log(`Sarasai nelygus.`);
+}else {
+    console.log(`Sarasai vienodo ilgio.`);
+}
+if(balsuIlgis != reitingoIlgis) {
+    console.log(`Sarasai nelygus.`);
+}else {
+    console.log(`Sarasai vienodo ilgio.`);
+} 
+/* 5.e. (kuris didesnis arba lygus) */
+if(reitingoIlgis >= batuDydzioIlgis) {
+    console.log(`Reitingo sarasas didesnis arba lygus batu dydziu sarasui.`);
+}else {
+    console.log(`Nera teisingo atsakymo.`);
+} 
+if(batuDydzioIlgis >= balsuIlgis) {
+    console.log(`Batu dydziu sarasas didesnis arba lygus balsu sarasui.`);
+}else {
+    console.log(`Nera teisingo atsakymo.`);
+}
+if(balsuIlgis >= reitingoIlgis) {
+    console.log(`Balsu sarasas didesnis arba lygus reitingo sarasui.`);
+}else {
+    console.log(`Nera teisingo atsakymo.`);
+} 
+/* 5.f. (kuris mazesnis arba lygus) */
+if(reitingoIlgis <= batuDydzioIlgis) {
+    console.log(`Reitingo sarasas mazesnis arba lygus batu dydziu sarasui.`);
+}else {
+    console.log(`Nera teisingo atsakymo.`);
+} 
+if(batuDydzioIlgis <= balsuIlgis) {
+    console.log(`Batu dydziu sarasas mazesnis arba lygus balsu sarasui.`);
+}else {
+    console.log(`Nera teisingo atsakymo.`);
+}
+if(balsuIlgis <= reitingoIlgis) {
+    console.log(`Balsu sarasas mazesnis arba lygus reitingo sarasui.`);
+}else {
+    console.log(`Nera teisingo atsakymo.`);
+} 
+/* Ciklo for panaudojimas
+1.a. kokia suma intervale imtinai (0-0) */
+const sarasas = [0, 0];
+let sum = 0; 
+for(let i=0; i<sarasas.length; i++) {
+    sum += sarasas[i];
+    console.log(i + ')', sarasas[i], '->', sum);
+}
+/* 1.b. (0-4) */
+const sarasas1 = [0, 1, 2, 3, 4];
+let sum1 = 0;
+for (let i=0; i<sarasas1.length; i++) {
+    sum1 += sarasas1[i];
+    console.log(i + ')', sarasas1[i], '->', sum1);
+}
+/* 1.c. (0-100) */
+let sum2 = 0;
+for (let i=0; i<=100; i++) {
+    sum2 += i;
+    console.log(i + ')', sum2);
+}
+/* 1.d. (574-815) */
+let sum3 = 0;
+for (let i=574; i<=815; i++) {
+    sum3 += i;
+    console.log(i + ')', sum3);
+}
+/* 1.e. (-50-50) */
+let sum4 = 0;
+for (let i=-50; i<=50; i++) {
+    sum4 += i;
+    console.log(i + ')', sum4);
+}
+/* 1.f. (-70-30) */
+let sum5 = 0;
+for (let i=-70; i<=-30; i++) {
+    sum5 += i;
+    console.log(i + ')', sum5);
+}
+/* 2.a. (perrasyti tekst. tipo kintamuju reiksmes is kito galo) (pavasaris) */
+for(let i = metuLaikas.length -1; i>=0; i--) {
+    console.log(metuLaikas[i]);
+}
+/* 2.b. (filmas) */
+for (let i=filmas.length - 1; i>=0; i--) {
+    console.log(filmas[i]);
+}
+/* 2.c. (gele) */
+for (let i=gele.length -1; i>=0; i--) {
+    console.log(gele[i]);
+}
+/* 3.a. (kiek intervale yra skaiciu kurie dalijasi
+    be liekanos is 3, 5 ir 7) (0-11) */
+    const nuo = 0;
+    const iki = 11;
+    const daliklis = 3;
+    let skaiciuKiekis = 0;
+for (let i=0; i<=11; i++) {
+    if (i % 3 === 0) {
+       skaiciuKiekis++;
+    }
+}
+   console.log (`Skaiciu intervale tarp ${nuo} ir ${iki}, 
+besidalijanciu be liekanos is ${daliklis} yra ${skaiciuKiekis}
+vienetai`);
+
+const daliklis1 = 5;
+for (let i=0; i<=11; i++) {
+    if (i % 5 === 0) {
+       skaiciuKiekis++;
+    }
+}
+console.log(skaiciuKiekis);
+   console.log (`Skaiciu intervale tarp ${nuo} ir ${iki}, 
+besidalijanciu be liekanos is ${daliklis1} yra ${skaiciuKiekis}
+vienetai`);
+
+const daliklis2 = 7;
+for (let i=0; i<=11; i++) {
+    if (i % 7 === 0) {
+       skaiciuKiekis++;
+    }
+}
+console.log(skaiciuKiekis);
+   console.log (`Skaiciu intervale tarp ${nuo} ir ${iki}, 
+besidalijanciu be liekanos is ${daliklis2} yra ${skaiciuKiekis}
+vienetai`);
+/* 3.b. (8-31) */
+const nuo1 = 8;
+const iki1 = 31;
+for (i=8; i<=31; i++) {
+    if(i % 3 === 0){
+        skaiciuKiekis++;
+    }
+}
+console.log(skaiciuKiekis);
+   console.log (`Skaiciu intervale tarp ${nuo1} ir ${iki1}, 
+besidalijanciu be liekanos is ${daliklis} yra ${skaiciuKiekis}
+vienetai`);
+
+for (i=8; i<=31; i++) {
+    if (i % 5 === 0) {
+        skaiciuKiekis++;
+    }
+}
+console.log(skaiciuKiekis);
+   console.log (`Skaiciu intervale tarp ${nuo1} ir ${iki1}, 
+besidalijanciu be liekanos is ${daliklis1} yra ${skaiciuKiekis}
+vienetai`);
+
+for (i=8; i<=31; i++) {
+    if (i % 7 === 0) {
+        skaiciuKiekis++;
+    }
+}
+console.log(skaiciuKiekis);
+   console.log (`Skaiciu intervale tarp ${nuo1} ir ${iki1}, 
+besidalijanciu be liekanos is ${daliklis2} yra ${skaiciuKiekis}
+vienetai`);
+/* 3.c. (-18-18) */
+const nuo2 = -18;
+const iki2 = 18;
+for (i=-18; i<=18; i++) {
+    if(i % 3 === 0){
+        skaiciuKiekis++;
+    }
+}
+console.log(skaiciuKiekis);
+   console.log (`Skaiciu intervale tarp ${nuo2} ir ${iki2}, 
+besidalijanciu be liekanos is ${daliklis} yra ${skaiciuKiekis}
+vienetai`);
+
+for (i=-18; i<=18; i++) {
+    if (i % 5 === 0) {
+        skaiciuKiekis++;
+    }
+}
+console.log(skaiciuKiekis);
+   console.log (`Skaiciu intervale tarp ${nuo2} ir ${iki2}, 
+besidalijanciu be liekanos is ${daliklis1} yra ${skaiciuKiekis}
+vienetai`);
+
+for (i=-18; i<=18; i++) {
+    if (i % 7 === 0) {
+        skaiciuKiekis++;
+    }
+}
+console.log(skaiciuKiekis);
+   console.log (`Skaiciu intervale tarp ${nuo2} ir ${iki2}, 
+besidalijanciu be liekanos is ${daliklis2} yra ${skaiciuKiekis}
+vienetai`);
+
