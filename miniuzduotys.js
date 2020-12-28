@@ -405,17 +405,26 @@ for (let i=-70; i<=-30; i++) {
     console.log(i + ')', sum5);
 }
 /* 2.a. (perrasyti tekst. tipo kintamuju reiksmes is kito galo) (pavasaris) */
+let backward = '';
 for(let i = metuLaikas.length -1; i>=0; i--) {
-    console.log(metuLaikas[i]);
+    const letter = metuLaikas[i];
+    backward += letter;
 }
+console.log(backward);
 /* 2.b. (filmas) */
+let backward1 = '';
 for (let i=filmas.length - 1; i>=0; i--) {
-    console.log(filmas[i]);
+    const letter1 = filmas[i];
+    backward1 += letter1;
 }
+console.log(backward1);
 /* 2.c. (gele) */
+let backward2 = '';
 for (let i=gele.length -1; i>=0; i--) {
-    console.log(gele[i]);
+    const letter2 = gele[i];
+    backward2 += letter2
 }
+console.log(backward2);
 /* 3.a. (kiek intervale yra skaiciu kurie dalijasi
     be liekanos is 3, 5 ir 7) (0-11) */
     const nuo = 0;
