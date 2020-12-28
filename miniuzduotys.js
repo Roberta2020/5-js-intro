@@ -526,3 +526,36 @@ console.log(skaiciuKiekis);
 besidalijanciu be liekanos is ${daliklis2} yra ${skaiciuKiekis}
 vienetai`);
 
+/* FUNKCIJOS */
+/* 1.a.b.c.d. (tuscia funkcija)  */
+function tusciaFuncija() {
+    return false;
+}
+console.log(tusciaFuncija());
+/* 2.a.b.c.d. (daugyba) */
+function daugyba(a, b) {
+    const multiply = a * b;
+    return multiply;
+}
+
+const skaicius1 = 5;
+const skaicius2 = 8;
+const skaicius3 = 7;
+
+console.log(daugyba(skaicius1, skaicius2));
+console.log(daugyba(skaicius3, skaicius2));
+console.log(daugyba(skaicius1, skaicius3));
+/* 3.a.b.c.d.e.f (skaitmenuKiekisSkaiciuje)*/
+function skaitmenuKiekisSkaiciuje(skaicius) {
+    if(typeof skaicius !== 'number') {
+        return 'Pateikta netinkamo tipo reiksme.';
+    } else {
+        for (let i=0; i<skaicius.length; i++) {
+        let skaitmenuKiekis = skaicius[i];
+        return skaitmenuKiekis;
+        }
+    }
+}  
+console.log(skaitmenuKiekisSkaiciuje(5));
+
+
